@@ -1466,6 +1466,8 @@
     <Content Include="Views\QuanLyTaiKhoan\PhanQuyen.cshtml" />
     <Content Include="Views\QuanLyNhaXe\ThongTinNhaXe.cshtml" />
     <Content Include="Views\QuanLyDatXe\DanhSachDatXe.cshtml" />
+    <Content Include="Views\QuanLyDatXe\DatXe.cshtml" />
+    <Content Include="Views\QuanLyDatXe\QuyTrinhDatXe\Buoc1.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

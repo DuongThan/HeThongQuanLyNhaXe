@@ -13,5 +13,9 @@ namespace HeThongQuanLyNhaXe.Controllers
         {
             return View();
         }
+        public ActionResult DatXe()
+        {
+            return View();
+        }
     }
 }

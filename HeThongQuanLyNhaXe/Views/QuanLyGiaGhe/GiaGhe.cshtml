@@ -47,16 +47,8 @@
                                 <td><span>@i</span></td>
                                 <td class="center">
                                     <div class="action-buttons">
-                                        <a class="blue" href="#">
-                                            <i class="ace-icon fa fa-search-plus bigger-130"></i>
-                                        </a>
-
-                                        <a class="green" href="#">
+                                        <a class="green" onclick="showModalInfo()">
                                             <i class="ace-icon fa fa-pencil bigger-130"></i>
-                                        </a>
-
-                                        <a class="red" href="#">
-                                            <i class="ace-icon fa fa-trash-o bigger-130"></i>
                                         </a>
                                     </div>
                                 </td>
@@ -68,4 +60,54 @@
         </div>
     </div>
 </div>
+
+<div id="modal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="smaller lighter blue no-margin">Thông tin giá ghế</h3>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12 margin-md-bottom">
+                        <div class="form-group">
+                            <label class="control-label no-padding-right">Tên xe</label>
+                            <div>
+                                <input disabled type="text" class="col-xs-12" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 margin-md-bottom">
+                        <div class="form-group">
+                            <label class="control-label no-padding-right">Giá người lớn</label>
+                            <div>
+                                <input type="text" class="col-xs-12" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 margin-md-bottom">
+                        <div class="form-group">
+                            <label class="control-label no-padding-right">Giá trẻ em</label>
+                            <div>
+                                <input type="text" class="col-xs-12" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer text-right">
+                <button class="btn btn-sm btn-success">Lưu</button>
+                <button class="btn btn-sm btn-default" data-dismiss="modal">Hủy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="~/Scripts/dataTable.js"></script>
+<script>
+    function showModalInfo() {
+        $("#modal").modal();
+    }
+</script>

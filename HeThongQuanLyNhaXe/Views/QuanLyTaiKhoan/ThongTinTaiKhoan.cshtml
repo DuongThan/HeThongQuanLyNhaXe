@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewBag.Title = "Quản lý tài khoản";
+}
+
+<div class="page-content">
+    <div class="page-header">
+        <h1>
+            Thông tin tài khoản
+        </h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="tabbable">
+                <ul class="nav nav-tabs" id="myTab">
+                    <li class="active">
+                        <a data-toggle="tab" href="#thongtintaikhoan">
+                            <i class="green ace-icon fa fa-home bigger-120"></i>
+                            Thông tin tài khoản
+                        </a>
+                    </li>
+
+                    <li>
+                        <a data-toggle="tab" href="#doimatkhau">
+                            Đổi mật khẩu
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" style="overflow: hidden;">
+                    <div id="thongtintaikhoan" class="tab-pane fade in active">
+                        <div class="row">
+                            <div class="col-md-12 margin-md-buttom">
+                                <div class="form-group">
+                                    <label class="control-label no-padding-right">Tên tài khoản</label>
+                                    <div>
+                                        <input type="text" disabled class="col-xs-12 col-sm-6 col-md-4" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 margin-md-buttom">
+                                <div class="form-group">
+                                    <label class="control-label no-padding-right">Email</label>
+                                    <div>
+                                        <input type="text" class="col-xs-12 col-sm-6 col-md-4" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button class="btn btn-success">Cập nhật</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="doimatkhau" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-md-12 margin-md-buttom">
+                                <div class="form-group">
+                                    <label class="control-label no-padding-right">Tên tài khoản</label>
+                                    <div>
+                                        <input type="text" disabled class="col-xs-12 col-sm-6 col-md-4" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 margin-md-buttom">
+                                <div class="form-group">
+                                    <label class="control-label no-padding-right">Mật khẩu cũ</label>
+                                    <div>
+                                        <input type="password" class="col-xs-12 col-sm-6 col-md-4" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 margin-md-buttom">
+                                <div class="form-group">
+                                    <label class="control-label no-padding-right">Mật khẩu mới</label>
+                                    <div>
+                                        <input type="password" class="col-xs-12 col-sm-6 col-md-4" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 margin-md-buttom">
+                                <div class="form-group">
+                                    <label class="control-label no-padding-right">Nhập lại mật khẩu mới</label>
+                                    <div>
+                                        <input type="password" class="col-xs-12 col-sm-6 col-md-4" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button class="btn btn-success">Cập nhật</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

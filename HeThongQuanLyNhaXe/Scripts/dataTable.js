@@ -3,8 +3,7 @@
         pageLength: 10,
         paging: true,
         searching: true,
-        order: [[0, "asc"]],
-        columnDefs: [{ orderable: false, targets: [2] }] // 6 was the highest index, not 7
+        order: [[0, "asc"]]
     });
 
     new $.fn.dataTable.Buttons(myTable, {

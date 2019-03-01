@@ -182,7 +182,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\QuanLyDatXeController.cs" />
     <Compile Include="Controllers\QuanLyDiemChungChuyenController.cs" />
     <Compile Include="Controllers\QuanLyGheNgoiController.cs" />
     <Compile Include="Controllers\QuanLyGiaGheController.cs" />
@@ -1420,7 +1420,6 @@
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\TongQuan\ManHinhTongQuan.cshtml" />
@@ -1466,6 +1465,7 @@
     <Content Include="Views\QuanLyTaiKhoan\DanhSachQuyen.cshtml" />
     <Content Include="Views\QuanLyTaiKhoan\PhanQuyen.cshtml" />
     <Content Include="Views\QuanLyNhaXe\ThongTinNhaXe.cshtml" />
+    <Content Include="Views\QuanLyDatXe\DanhSachDatXe.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

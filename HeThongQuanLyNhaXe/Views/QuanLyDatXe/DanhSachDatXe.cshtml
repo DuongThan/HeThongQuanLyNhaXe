@@ -1,18 +1,18 @@
 ﻿
 @{
-    ViewBag.Title = "Quản lý tài khoản";
+    ViewBag.Title = "Danh sách đặt xe";
 }
 
 <div class="page-content">
     <div class="page-header">
         <h1>
-            Danh sách tài khoản
+            Danh sách đặt xe
         </h1>
     </div>
     <div class="row">
         <div class="col-xs-12">
             <div class="table-header">
-                Danh sách tài khoản
+                Danh sách đặt xe
                 <div class="pull-right tableTools-container"></div>
             </div>
             <div>
@@ -20,10 +20,13 @@
                     <thead>
                         <tr>
                             <th class="center">#</th>
-                            <th>Tên tài khoản</th>
-                            <th>Quyền</th>
-                            <th>Email</th>
-                            <th class="center">Lần đăng nhập gần nhất</th>
+                            <th>Tên khách hàng</th>
+                            <th>Số điện thoại</th>
+                            <th>Tuyến xe</th>
+                            <th>Điểm đón</th>
+                            <th>Điểm đưa</th>
+                            <th class="center">Số người</th>
+                            <th class="center">Ngày đặt</th>
                             <th class="center">Thao tác</th>
                         </tr>
                     </thead>
@@ -36,13 +39,22 @@
                                     <label class="pos-rel">@i</label>
                                 </td>
                                 <td>
-                                    <span>Tài khoản @i</span>
+                                    <span>Tên khách hàng @i</span>
                                 </td>
                                 <td>
-                                    <span>Quyền @i</span>
+                                    <span>SDT @i</span>
                                 </td>
                                 <td>
-                                    <span>Email_@i@@gmail.com</span>
+                                    <span>Tuyến xe @i</span>
+                                </td>
+                                <td>
+                                    <span>Điểm đón @i</span>
+                                </td>
+                                <td>
+                                    <span>Điểm đưa @i</span>
+                                </td>
+                                <td class="center">
+                                    <span>@i</span>
                                 </td>
                                 <td class="center">
                                     <span>@DateTime.Now.ToString("dd/MM/yyyy HH:mm")</span>
@@ -67,11 +79,11 @@
 </div>
 
 <div id="modal" class="modal fade" tabindex="-1">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3 class="smaller lighter blue no-margin">Thông tin tài khoản</h3>
+                <h3 class="smaller lighter blue no-margin">Thông tin đặt xe</h3>
             </div>
 
             <div class="modal-body">

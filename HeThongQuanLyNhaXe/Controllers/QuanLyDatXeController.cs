@@ -6,12 +6,11 @@ using System.Web.Mvc;
 
 namespace HeThongQuanLyNhaXe.Controllers
 {
-    public class HomeController : Controller
+    public class QuanLyDatXeController : Controller
     {
-        public ActionResult Index()
+        // GET: QuanLyDatXe
+        public ActionResult DanhSachDatXe()
         {
-            ViewBag.Title = "Home Page";
-
             return View();
         }
     }
